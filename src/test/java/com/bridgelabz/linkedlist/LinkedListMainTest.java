@@ -4,8 +4,10 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class LinkedListMainTest {
+public class LinkedListMainTest {
     @Test
-    void name() {
+  public void shouldAnswerWithTrue() {
+
+        assertTrue( true );
     }
 }
