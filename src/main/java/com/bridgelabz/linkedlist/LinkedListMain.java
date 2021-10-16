@@ -1,19 +1,22 @@
 package com.bridgelabz.linkedlist;
 
+import java.util.Scanner;
+
+/**
+ * Program on LinkedList
+ *
+ * @author : Anji Raj Ardula
+ * @version : 16.0
+ * @since : 16/10/2021
+ */
+
 public class LinkedListMain {
     public static void main(String[] args) {
-        Node firstNode = new Node(56);
-        Node secondNode = new Node(30);
-        Node thirdNode = new Node(70);
-        Node head = firstNode;
-        firstNode.next = secondNode;
-        secondNode.next = thirdNode;
-        Node tail = thirdNode;
-
-        Node temp = head;
-        while (temp != null) {
-            System.out.println(temp.data);
-            temp = temp.next;
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Enter 1 to add the data at the start");
+        switch(scanner.nextInt()){
+            case 1:
+                Operations.addDataAtStart();
         }
     }
 }
